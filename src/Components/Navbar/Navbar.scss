@@ -1,0 +1,75 @@
+.navbar {
+    background: rgb(7, 7, 7);
+    background: linear-gradient(90deg, rgba(7, 7, 7, 1) 0%, rgba(0, 0, 0, 1) 100%
+    );
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("https://images4.alphacoders.com/131/1313954.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    
+
+    li {
+        list-style: none;
+    }
+
+    .title {
+        font-size: 30px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .nav__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav__link {
+            font-size: 20px;
+            font-weight: 400;
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .nav__link a {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .nav__link a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #fff;
+            transition: width .3s;
+        }
+
+        .nav__link a:hover::after {
+            width: 100%;
+            transition: width .3s;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+        
+        .nav__link {
+            font-size: 20px;
+            font-weight: 400;
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    }
+    
+}
+    
